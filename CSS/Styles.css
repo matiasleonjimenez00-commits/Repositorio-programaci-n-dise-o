@@ -1,6 +1,0 @@
-html {
-  scroll-behavior: smooth;
-}
-section, h1[id] {
-  scroll-margin-top: 70px;
-}
