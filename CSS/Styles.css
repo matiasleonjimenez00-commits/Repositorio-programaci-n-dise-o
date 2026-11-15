@@ -42,3 +42,29 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.barra-principal {
+  background-color: rgba(11, 19, 43, 0.96);
+  border-bottom: 2px solid var(--cian);
+  box-shadow: 0 0 18px rgba(0, 229, 255, 0.3);
+}
+
+.barra-principal .navbar-brand {
+  font-family: var(--fuente-titulos);
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: var(--cian);
+}
+
+.barra-principal .nav-link {
+  color: var(--plata);
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.barra-principal .nav-link:hover,
+.barra-principal .nav-link:focus {
+  color: var(--cian);
+  border-bottom-color: var(--cian);
+}
