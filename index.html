@@ -62,7 +62,7 @@
       </div>
     </div>
   </div>
-</section>
+</section>x
 <section id="personajes" class="container my-5">
   <h1 class="text-center mb-4" style="font-size: large;">Personajes principales</h1>
 
@@ -142,9 +142,93 @@
     </div>
   </div>
 </section>
+<section id="galeria" class="seccion">
+  <div class="container">
+    <h2 class="titulo-seccion">Galería</h2>
+    <p class="intro-seccion">Haz clic en una imagen para verla en grande.</p>
+     <div class="filtros">
+      <button type="button" class="btn btn-contorno filtro activo" data-filtro="todas">Todas</button>
+      <button type="button" class="btn btn-contorno filtro" data-filtro="personajes">Personajes</button>
+      <button type="button" class="btn btn-contorno filtro" data-filtro="lugares">Lugares</button>
+    </div>
+
+    <!-- Fotos -->
+    <div class="row g-4">
+
+      <div class="col-12 col-sm-6 col-lg-3 foto-galeria" data-categoria="personajes">
+        <figure>
+          <img src="IMG/Milech.jpeg" alt="Milech, un joven con lentes y cabello rizado">
+          <figcaption>Milech</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 foto-galeria" data-categoria="personajes">
+        <figure>
+          <img src="IMG/Luna.jpeg" alt="Luna, una perrita color miel con un pañuelo de flores">
+          <figcaption>Luna</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 foto-galeria" data-categoria="personajes">
+        <figure>
+          <img src="IMG/zeta.svg" alt="Zeta, el robot guardián de la Torre Circuito">
+          <figcaption>Zeta, el guardián</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 foto-galeria" data-categoria="lugares">
+        <figure>
+          <img src="IMG/bosque.svg" alt="El Bosque de Cables con árboles de luces">
+          <figcaption>Bosque de Cables</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 foto-galeria" data-categoria="lugares">
+        <figure>
+          <img src="IMG/torre.svg" alt="La Torre Circuito con su campo de energía">
+          <figcaption>Torre Circuito</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 foto-galeria" data-categoria="lugares">
+        <figure>
+          <img src="IMG/nucleo.svg" alt="La entrada de la torre con el campo de energía encendido">
+          <figcaption>El campo de energía</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 foto-galeria" data-categoria="lugares">
+        <figure>
+          <img src="IMG/nucleo-activo.svg" alt="El Núcleo encendido y la entrada abierta">
+          <figcaption>El Núcleo despierta</figcaption>
+        </figure>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3 foto-galeria" data-categoria="lugares">
+        <figure>
+          <img src="IMG/amanecer.svg" alt="Amanecer sobre la ciudad de Aldrath">
+          <figcaption>Amanecer en Aldrath</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+  <div id="visor" class="visor">
+  <button type="button" id="visor-cerrar" class="visor-boton visor-cerrar" aria-label="Cerrar">&times;</button>
+  <button type="button" id="visor-anterior" class="visor-boton visor-anterior" aria-label="Foto anterior">&#8249;</button>
+
+  <figure class="visor-contenido">
+    <img id="visor-img" src="" alt="">
+    <figcaption id="visor-texto"></figcaption>
+  </figure>
+
+  <button type="button" id="visor-siguiente" class="visor-boton visor-siguiente" aria-label="Foto siguiente">&#8250;</button>
+</div>
+</section>
 </main>
 <footer class="text-center my-4">
   <p>Milech y Luna: El Misterio del Núcleo Perdido · Proyecto 2026</p>
 </footer>
 </body>
+<script src="JS/galeria.js"></script>
 </html>
