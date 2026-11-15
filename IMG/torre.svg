@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="La Torre Circuito">
+  <defs>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#050a1c"/><stop offset="1" stop-color="#2a1b5e"/>
+    </linearGradient>
+    <filter id="brillo"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#cielo)"/>
+  <g fill="#fff" opacity=".8"><circle cx="90" cy="50" r="2"/><circle cx="700" cy="70" r="2"/><circle cx="150" cy="140" r="1.5"/><circle cx="640" cy="170" r="2"/></g>
+  <rect y="440" width="800" height="60" fill="#0a1233"/>
+  <!-- torre -->
+  <path d="M320 440V170l30-40h100l30 40v270z" fill="#16224f" stroke="#00E5FF" stroke-width="4"/>
+  <rect x="365" y="80" width="70" height="60" fill="#16224f" stroke="#00E5FF" stroke-width="4"/>
+  <rect x="396" y="30" width="8" height="52" fill="#8e93a8"/>
+  <circle cx="400" cy="26" r="10" fill="#FFB703" filter="url(#brillo)"/>
+  <!-- circuitos -->
+  <g fill="none" stroke="#00E5FF" stroke-width="3" stroke-linecap="round">
+    <path d="M345 200h40v40h40M345 280h25v40h55M455 190v60"/>
+  </g>
+  <g fill="#FFB703"><circle cx="425" cy="240" r="5"/><circle cx="425" cy="320" r="5"/><circle cx="455" cy="250" r="5"/></g>
+  <!-- puerta con campo de energía -->
+  <path d="M370 440v-90q30-45 60 0v90z" fill="#050a1c"/>
+  <path d="M365 440v-95q35-55 70 0v95z" fill="#7B2CBF" opacity=".55" stroke="#FFB703" stroke-width="3" filter="url(#brillo)"/>
+  <path d="M375 430l50-70M375 395l50-45M375 360l30-30" stroke="#FFB703" stroke-width="2" opacity=".8"/>
+</svg>

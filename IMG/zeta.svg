@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Zeta">
+  <defs>
+    <radialGradient id="fondo" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#1c2a5c"/><stop offset="1" stop-color="#0B132B"/>
+    </radialGradient>
+    <filter id="brillo"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#fondo)"/>
+  <g fill="#fff" opacity=".8"><circle cx="50" cy="60" r="2"/><circle cx="350" cy="50" r="2"/><circle cx="360" cy="220" r="1.5"/></g>
+  <!-- antena -->
+  <rect x="196" y="35" width="8" height="45" fill="#8e93a8"/>
+  <circle cx="200" cy="32" r="11" fill="#FFB703" filter="url(#brillo)"/>
+  <!-- piernas -->
+  <rect x="155" y="300" width="36" height="70" rx="8" fill="#6c7186"/>
+  <rect x="210" y="300" width="36" height="70" rx="8" fill="#6c7186"/>
+  <rect x="145" y="360" width="56" height="20" rx="8" fill="#4a4f66"/>
+  <rect x="200" y="360" width="56" height="20" rx="8" fill="#4a4f66"/>
+  <!-- brazos -->
+  <rect x="85" y="180" width="38" height="110" rx="16" fill="#8e93a8"/>
+  <rect x="278" y="180" width="38" height="110" rx="16" fill="#8e93a8"/>
+  <circle cx="104" cy="296" r="17" fill="#6c7186"/><circle cx="297" cy="296" r="17" fill="#6c7186"/>
+  <!-- torso -->
+  <rect x="115" y="170" width="170" height="140" rx="24" fill="#aeb3c6" stroke="#E0E1DD" stroke-width="3"/>
+  <circle cx="200" cy="240" r="30" fill="#0B132B" stroke="#7B2CBF" stroke-width="4"/>
+  <circle cx="200" cy="240" r="13" fill="#FFB703" filter="url(#brillo)"/>
+  <path d="M135 195h35M230 195h35M135 290h35M230 290h35" stroke="#6c7186" stroke-width="4" stroke-linecap="round"/>
+  <!-- cabeza -->
+  <rect x="140" y="80" width="120" height="90" rx="26" fill="#aeb3c6" stroke="#E0E1DD" stroke-width="3"/>
+  <rect x="155" y="105" width="90" height="35" rx="16" fill="#0B132B"/>
+  <circle cx="180" cy="122" r="9" fill="#00E5FF" filter="url(#brillo)"/>
+  <circle cx="220" cy="122" r="9" fill="#00E5FF" filter="url(#brillo)"/>
+  <!-- detalles de óxido y edad -->
+  <path d="M130 215l14 14M255 270l12 10" stroke="#b5651d" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+</svg>

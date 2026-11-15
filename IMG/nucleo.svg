@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Entrada de la Torre Circuito con el campo de energía activo">
+  <defs>
+    <radialGradient id="fondo" cx="50%" cy="50%" r="70%">
+      <stop offset="0" stop-color="#2a1b5e"/><stop offset="1" stop-color="#050a1c"/>
+    </radialGradient>
+    <filter id="brillo"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#fondo)"/>
+  <!-- muro de la torre -->
+  <rect x="120" y="60" width="560" height="380" rx="20" fill="#16224f" stroke="#00E5FF" stroke-width="4"/>
+  <g fill="none" stroke="#00E5FF" stroke-width="3" opacity=".6" stroke-linecap="round">
+    <path d="M150 100h80v50M650 100h-80v50M150 400h80v-50M650 400h-80v-50"/>
+  </g>
+  <!-- arco de entrada -->
+  <path d="M290 440V230q110-150 220 0v210z" fill="#050a1c"/>
+  <!-- núcleo apagado al fondo -->
+  <circle cx="400" cy="320" r="45" fill="#2b2f45" stroke="#7B2CBF" stroke-width="4"/>
+  <circle cx="400" cy="320" r="20" fill="#3b2a6d"/>
+  <!-- campo de energía -->
+  <path d="M290 440V230q110-150 220 0v210z" fill="#7B2CBF" opacity=".5" stroke="#FFB703" stroke-width="5" filter="url(#brillo)"/>
+  <g stroke="#FFB703" stroke-width="2.5" opacity=".85" stroke-linecap="round">
+    <path d="M300 420l190-250M300 380l165-215M300 340l130-170M320 430l170-210M360 440l130-170M410 440l80-105"/>
+  </g>
+  <!-- placa con pista escondida (sin revelar) -->
+  <rect x="535" y="360" width="60" height="42" rx="6" fill="#2b2f45" stroke="#8e93a8" stroke-width="3"/>
+  <path d="M548 372h34M548 386h22" stroke="#8e93a8" stroke-width="3" stroke-linecap="round"/>
+</svg>

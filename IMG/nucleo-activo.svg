@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Entrada de la Torre Circuito con el campo de energía apagado y el Núcleo encendido">
+  <defs>
+    <radialGradient id="fondo" cx="50%" cy="55%" r="70%">
+      <stop offset="0" stop-color="#6b4aa8"/><stop offset="1" stop-color="#1b2a63"/>
+    </radialGradient>
+    <radialGradient id="luz" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFB703" stop-opacity=".9"/><stop offset="1" stop-color="#FFB703" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="brillo"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#fondo)"/>
+  <rect x="120" y="60" width="560" height="380" rx="20" fill="#16224f" stroke="#00E5FF" stroke-width="4"/>
+  <g fill="none" stroke="#00E5FF" stroke-width="3" stroke-linecap="round">
+    <path d="M150 100h80v50M650 100h-80v50M150 400h80v-50M650 400h-80v-50"/>
+  </g>
+  <!-- entrada abierta e iluminada -->
+  <path d="M290 440V230q110-150 220 0v210z" fill="#2a1b5e"/>
+  <circle cx="400" cy="320" r="130" fill="url(#luz)"/>
+  <!-- núcleo encendido -->
+  <circle cx="400" cy="320" r="45" fill="#FFB703" stroke="#fff" stroke-width="4" filter="url(#brillo)"/>
+  <circle cx="400" cy="320" r="20" fill="#fff" opacity=".9"/>
+  <!-- placa abierta con el puerto del chip -->
+  <rect x="535" y="360" width="60" height="42" rx="6" fill="#0B132B" stroke="#00E5FF" stroke-width="3"/>
+  <rect x="553" y="371" width="24" height="20" rx="3" fill="#00E5FF" filter="url(#brillo)"/>
+</svg>
